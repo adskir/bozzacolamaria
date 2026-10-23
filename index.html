@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dott. Antonio Colamaria — Neurochirurgo a Bari e Foggia</title>
+<meta name="description" content="Dott. Antonio Colamaria, specialista in Neurochirurgia. Visite a Bari (Casa di Cura La Madonnina, venerdì) e a Foggia (via Napoli 6, giovedì). Patologie cerebrali, della colonna vertebrale e dei nervi periferici.">
+<!-- BOZZA: noindex finché non diventa il sito ufficiale -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" href="fonts/fraunces-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dott. Antonio Colamaria",
+  "medicalSpecialty": "Neurosurgery",
+  "telephone": "+39 379 103 2243",
+  "image": "https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_Foto_DOC.png",
+  "address": [
+    {"@type": "PostalAddress", "streetAddress": "Viale Louis Pasteur, 18 (Casa di Cura La Madonnina)", "addressLocality": "Bari", "postalCode": "70124", "addressCountry": "IT"},
+    {"@type": "PostalAddress", "streetAddress": "Via Napoli, 6", "addressLocality": "Foggia", "addressCountry": "IT"}
+  ]
+}
+</script>
+<style>
+@font-face{font-family:'Fraunces';font-weight:400;font-style:normal;font-display:swap;src:url(fonts/fraunces-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-weight:500;font-style:normal;font-display:swap;src:url(fonts/fraunces-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:400;font-style:normal;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:500;font-style:normal;font-display:swap;src:url(fonts/inter-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:600;font-style:normal;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format('woff2')}
+
+:root{
+  --ink:#10233B; --ink-soft:#4A5653; --paper:#F2F5F3; --paper-2:#E7ECE8; --white:#FFFFFF;
+  --teal:#1F5C55; --teal-deep:#143E39; --teal-light:#DCE9E5; --amber:#B98A2E; --line:#CDD6D0;
+  --r-lg:18px; --r-md:10px; --r-sm:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.01em;line-height:1.15}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* bozza */
+.draft{background:var(--ink);color:#C9D6D2;font-size:12.5px;text-align:center;padding:7px 16px}
+.draft b{color:#fff;font-weight:600}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(242,245,243,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{text-decoration:none;line-height:1.15}
+.brand strong{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:19px}
+.brand span{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+nav{display:flex;align-items:center;gap:28px;font-size:14.5px}
+nav a{text-decoration:none;color:var(--ink-soft)}
+nav a:hover{color:var(--teal-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:var(--r-md);transition:background .2s,transform .2s,border-color .2s}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:var(--teal-deep);transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--white)}
+.btn-sm{padding:10px 16px;font-size:14px}
+nav .btn{color:#fff}
+@media(max-width:820px){nav a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep);font-weight:600;margin-bottom:20px}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--amber)}
+.hero h1{font-size:clamp(34px,4.8vw,56px);max-width:15ch}
+.hero .lede{margin-top:20px;font-size:17.5px;color:var(--ink-soft);max-width:48ch}
+.hero-actions{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
+.facts{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:560px}
+.fact{border-top:1px solid var(--line);padding-top:12px}
+.fact b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:26px;color:var(--teal-deep);line-height:1.1}
+.fact span{font-size:13px;color:var(--ink-soft)}
+.portrait{position:relative;background:var(--teal-light);border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;max-width:420px;justify-self:end;width:100%}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.portrait figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(255,255,255,.94);border-radius:var(--r-md);padding:12px 14px;font-size:13.5px}
+.portrait figcaption strong{display:block;font-size:15px}
+@media(max-width:900px){
+  .hero{padding:44px 0}
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .portrait{justify-self:start;max-width:360px}
+}
+@media(max-width:480px){.facts{grid-template-columns:1fr 1fr}.fact:last-child{grid-column:span 2}}
+
+/* sections */
+section{padding:84px 0}
+.head{max-width:660px;margin-bottom:44px}
+.head.center{margin-left:auto;margin-right:auto;text-align:center}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep);font-weight:600;margin-bottom:12px}
+.head h2{font-size:clamp(27px,3.4vw,38px)}
+.head p{margin-top:14px;color:var(--ink-soft)}
+@media(max-width:700px){section{padding:60px 0}}
+
+/* patologie */
+.zones{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zone{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column}
+.zone-img{aspect-ratio:16/10;background:var(--teal-light);overflow:hidden}
+.zone-img img{width:100%;height:100%;object-fit:cover}
+.zone-body{padding:22px 22px 26px}
+.zone-tag{display:inline-block;font-size:12px;color:var(--amber);border:1px solid var(--amber);border-radius:var(--r-sm);padding:2px 9px;margin-bottom:10px;font-weight:600}
+.zone h3{font-size:22px;margin-bottom:14px}
+.cond{padding:12px 0;border-top:1px solid var(--paper-2)}
+.cond h4{font-size:15px;font-weight:600;margin-bottom:3px}
+.cond p{font-size:14px;color:var(--ink-soft)}
+@media(max-width:960px){.zones{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.zones{grid-template-columns:1fr}}
+
+/* quando */
+.when{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.when-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 32px;max-width:900px;margin:0 auto}
+.when-item{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--paper-2)}
+.when-item::before{content:'';flex:0 0 8px;height:8px;margin-top:9px;border-radius:50%;background:var(--teal)}
+.note{max-width:900px;margin:26px auto 0;font-size:13.5px;color:var(--ink-soft);text-align:center}
+@media(max-width:640px){.when-grid{grid-template-columns:1fr}}
+
+/* chi sono */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about p{color:var(--ink-soft);margin-bottom:14px}
+.timeline{list-style:none;border-left:2px solid var(--teal-light);padding-left:22px}
+.timeline li{position:relative;padding-bottom:22px}
+.timeline li::before{content:'';position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--teal)}
+.timeline .y{font-size:12.5px;font-weight:600;color:var(--amber);letter-spacing:.06em}
+.timeline .t{font-weight:600}
+.timeline .d{font-size:14px;color:var(--ink-soft)}
+.links-row{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:28px}}
+
+/* visita */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px}
+.step .n{font-family:'Fraunces',serif;font-size:34px;color:var(--teal);line-height:1}
+.step h3{font-size:20px;margin:12px 0 8px}
+.step p{font-size:14.5px;color:var(--ink-soft)}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* sedi */
+.sedi{background:var(--ink);color:#E9EFEC}
+.sedi .kicker{color:#9CC4BC}
+.sedi .head p{color:#B9C8C3}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.loc{background:#16304E;border:1px solid #23415F;border-radius:var(--r-lg);padding:30px}
+.loc .city{font-family:'Fraunces',serif;font-size:30px;color:#fff}
+.loc .place{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#9CC4BC;margin:4px 0 18px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-top:1px solid #23415F;font-size:15px}
+.row span:first-child{color:#B9C8C3}
+.row span:last-child{text-align:right;font-weight:500}
+.loc-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.loc .btn-ghost{border-color:#9CC4BC;color:#fff}
+.loc .btn-ghost:hover{background:#23415F}
+.loc .btn-primary{background:var(--amber)}
+.loc .btn-primary:hover{background:#9E7526}
+@media(max-width:760px){.loc-grid{grid-template-columns:1fr}}
+
+/* recensioni */
+.reviews{text-align:center}
+.stars{font-size:28px;color:var(--amber);letter-spacing:4px}
+.score{font-family:'Fraunces',serif;font-size:48px;line-height:1;margin:8px 0 6px}
+.reviews p{color:var(--ink-soft)}
+.reviews .links-row{justify-content:center;margin-top:24px}
+
+/* faq */
+.faq{max-width:780px;margin:0 auto}
+details{background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:10px}
+summary{cursor:pointer;list-style:none;padding:18px 22px;font-weight:600;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--teal);font-size:20px;line-height:1}
+details[open] summary::after{content:'–'}
+details p{padding:0 22px 18px;color:var(--ink-soft);font-size:15px}
+
+/* cta */
+.cta{background:var(--teal-deep);color:#fff;text-align:center}
+.cta h2{font-size:clamp(28px,3.6vw,40px);max-width:20ch;margin:0 auto 14px}
+.cta p{color:#CFE0DB;max-width:46ch;margin:0 auto 28px}
+.cta .btn-primary{background:var(--amber);font-size:17px;padding:16px 28px}
+.cta .btn-primary:hover{background:#9E7526}
+
+/* footer */
+footer{padding:44px 0 90px;font-size:13.5px;color:var(--ink-soft)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer strong{color:var(--ink);font-family:'Fraunces',serif;font-weight:500;font-size:17px}
+footer a{color:var(--ink-soft)}
+.disclaimer{max-width:520px}
+
+/* barra chiamata mobile */
+.callbar{display:none}
+@media(max-width:700px){
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;box-shadow:0 8px 24px rgba(16,35,59,.25)}
+  .callbar .btn{flex:1;padding:15px}
+  nav .btn{display:none}
+  header .wrap{height:64px}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Bozza di proposta</b> · anteprima preparata da ClickBari, non è il sito ufficiale</div>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="brand"><strong>Dott. Antonio Colamaria</strong><span>Neurochirurgo · Bari e Foggia</span></a>
+    <nav aria-label="Menu principale">
+      <a href="#patologie">Patologie</a>
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#sedi">Sedi e orari</a>
+      <a href="#faq">Domande</a>
+      <a href="tel:+393791032243" class="btn btn-primary btn-sm">Prenota: 379 103 2243</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Neurochirurgia · Bari e Foggia</div>
+      <h1>Cervello, colonna vertebrale e nervi periferici.</h1>
+      <p class="lede">Visite specialistiche in neurochirurgia: una valutazione chiara degli esami e delle opzioni di cura, conservative quando è possibile, chirurgiche quando servono.</p>
+      <div class="hero-actions">
+        <a href="tel:+393791032243" class="btn btn-primary">Chiama per prenotare</a>
+        <a href="#sedi" class="btn btn-ghost">Sedi e orari</a>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>dal 1999</b><span>specialista in Neurochirurgia</span></div>
+        <div class="fact"><b>1.600+</b><span>interventi come primo operatore</span></div>
+        <div class="fact"><b>2 sedi</b><span>Bari (venerdì) e Foggia (giovedì)</span></div>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_Foto_DOC.png" alt="Dott. Antonio Colamaria, neurochirurgo" width="420" height="525">
+      <figcaption><strong>Dott. Antonio Colamaria</strong>Medico chirurgo, specialista in Neurochirurgia</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="patologie">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Aree di competenza</div>
+      <h2>Di cosa mi occupo</h2>
+      <p>Le patologie trattate seguono il percorso del sistema nervoso: dall'encefalo, lungo la colonna vertebrale, fino ai nervi degli arti.</p>
+    </div>
+    <div class="zones">
+      <article class="zone">
+        <div class="zone-img"><img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_imm_patologie-10.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="zone-body">
+          <span class="zone-tag">01 · Encefalo</span>
+          <h3>Patologie cerebrali</h3>
+          <div class="cond"><h4>Tumori cerebrali</h4><p>Tumori benigni e maligni del sistema nervoso centrale, valutati in base al tipo e alla sede.</p></div>
+          <div class="cond"><h4>Patologie cerebrovascolari</h4><p>Aneurismi, malformazioni artero-venose (MAV), cavernomi e ischemia cerebrale cronica.</p></div>
+          <div class="cond"><h4>Trauma cranico</h4><p>Lesioni da trauma lieve, moderato o grave; in alcuni casi è necessario l'intervento chirurgico.</p></div>
+        </div>
+      </article>
+      <article class="zone">
+        <div class="zone-img"><img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_imm_patologie-11.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="zone-body">
+          <span class="zone-tag">02 · Colonna</span>
+          <h3>Patologie vertebrali</h3>
+          <div class="cond"><h4>Patologia degenerativa</h4><p>Ernie del disco, stenosi del canale e artrosi vertebrale: la causa più frequente di mal di schiena e dolore alle gambe. Spesso si parte dalle terapie conservative; la chirurgia serve in casi selezionati.</p></div>
+          <div class="cond"><h4>Trauma spinale</h4><p>Lesioni della colonna che possono richiedere un intervento tempestivo, anche con tecniche mini-invasive.</p></div>
+        </div>
+      </article>
+      <article class="zone">
+        <div class="zone-img"><img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_imm_patologie-12.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="zone-body">
+          <span class="zone-tag">03 · Nervi periferici</span>
+          <h3>Sistema nervoso periferico</h3>
+          <div class="cond"><h4>Lesioni traumatiche dei nervi</h4><p>Riparazione chirurgica dei nervi danneggiati che innervano braccia e gambe.</p></div>
+          <div class="cond"><h4>Tumori dei nervi periferici</h4><p>Valutazione e trattamento chirurgico delle neoplasie dei nervi periferici.</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="when">
+  <div class="wrap">
+    <div class="head center">
+      <div class="kicker">Quando rivolgersi al neurochirurgo</div>
+      <h2>Alcuni motivi frequenti per una visita</h2>
+    </div>
+    <div class="when-grid">
+      <div class="when-item">Mal di schiena o di collo che dura da settimane e non migliora con le cure</div>
+      <div class="when-item">Dolore che scende lungo il braccio o la gamba (sciatalgia, cervicobrachialgia)</div>
+      <div class="when-item">Formicolii, perdita di forza o di sensibilità a mani o piedi</div>
+      <div class="when-item">Una risonanza o una TAC che segnala un'ernia, una stenosi o una lesione</div>
+      <div class="when-item">Un secondo parere prima di un intervento già proposto</div>
+      <div class="when-item">Controlli dopo un trauma cranico o della colonna</div>
+    </div>
+    <p class="note">In caso di sintomi improvvisi e gravi (forte mal di testa improvviso, perdita di forza, difficoltà a parlare) rivolgersi subito al 112 o al pronto soccorso.</p>
+  </div>
+</section>
+
+<section id="chi-sono">
+  <div class="wrap about">
+    <div>
+      <div class="kicker">Chi sono</div>
+      <h2 style="font-size:clamp(27px,3.4vw,38px);margin-bottom:18px">Oltre 25 anni in neurochirurgia</h2>
+      <p>Mi sono laureato in Medicina e Chirurgia all'Università di Bari, con una tesi sul vasospasmo cerebrale dopo emorragia subaracnoidea, e nella stessa università mi sono specializzato in Neurochirurgia.</p>
+      <p>Da allora mi occupo di tutte le patologie di interesse neurochirurgico. In visita dedico il tempo necessario a guardare gli esami insieme al paziente e a spiegare le opzioni, con parole chiare.</p>
+      <div class="links-row">
+        <a href="https://antoniocolamaria.it/curriculum-vitae/" class="btn btn-ghost btn-sm">Curriculum completo</a>
+        <a href="https://antoniocolamaria.it/pubblicazioni/" class="btn btn-ghost btn-sm">Pubblicazioni</a>
+      </div>
+    </div>
+    <ol class="timeline">
+      <li><div class="y">1994</div><div class="t">Laurea in Medicina e Chirurgia</div><div class="d">Università degli Studi di Bari</div></li>
+      <li><div class="y">1999</div><div class="t">Specializzazione in Neurochirurgia</div><div class="d">Università degli Studi di Bari</div></li>
+      <li><div class="y">2000</div><div class="t">Dirigente medico, Neurochirurgia</div><div class="d">Ospedale SS. Annunziata, Taranto</div></li>
+      <li><div class="y">dal 2001</div><div class="t">Dirigente medico, Neurochirurgia</div><div class="d">Policlinico di Bari</div></li>
+      <li><div class="y">oggi</div><div class="t">Oltre 1.600 interventi come primo operatore</div><div class="d">Circa 60 congressi e 40 corsi di aggiornamento nazionali e internazionali</div></li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head center">
+      <div class="kicker">La visita</div>
+      <h2>Come si svolge</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Prenota</h3><p>Chiama il 379 103 2243 e scegli la sede: Bari il venerdì, Foggia il giovedì, dalle 14 alle 20.</p></div>
+      <div class="step"><div class="n">2</div><h3>Porta gli esami</h3><p>Risonanza, TAC o radiografie (immagini e referti), eventuali visite precedenti e l'elenco dei farmaci che assumi.</p></div>
+      <div class="step"><div class="n">3</div><h3>Valutazione e piano</h3><p>Analizziamo insieme gli esami e definiamo il percorso: terapie conservative, altri accertamenti o, se serve, l'intervento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sedi" id="sedi">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Sedi e orari</div>
+      <h2>Dove ricevo</h2>
+      <p>Un giorno a settimana per ogni sede: conviene prenotare con anticipo.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc">
+        <div class="city">Bari</div>
+        <div class="place">Casa di Cura La Madonnina</div>
+        <div class="row"><span>Indirizzo</span><span>Viale Louis Pasteur, 18</span></div>
+        <div class="row"><span>Giorno</span><span>Venerdì</span></div>
+        <div class="row"><span>Orario</span><span>14:00 – 20:00</span></div>
+        <div class="row"><span>Prenotazioni</span><span>379 103 2243</span></div>
+        <div class="loc-actions">
+          <a href="tel:+393791032243" class="btn btn-primary btn-sm">Chiama</a>
+          <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8eb4NxvpRxMRz8BQaF9ujLE" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Indicazioni</a>
+        </div>
+      </div>
+      <div class="loc">
+        <div class="city">Foggia</div>
+        <div class="place">Studio medico</div>
+        <div class="row"><span>Indirizzo</span><span>Via Napoli, 6</span></div>
+        <div class="row"><span>Giorno</span><span>Giovedì</span></div>
+        <div class="row"><span>Orario</span><span>14:00 – 20:00</span></div>
+        <div class="row"><span>Prenotazioni</span><span>379 103 2243</span></div>
+        <div class="loc-actions">
+          <a href="tel:+393791032243" class="btn btn-primary btn-sm">Chiama</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Napoli+6+Foggia" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Indicazioni</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="kicker">Recensioni</div>
+    <div class="stars" aria-hidden="true">★★★★★</div>
+    <div class="score">4,5</div>
+    <p>su Google, dalle recensioni dei pazienti</p>
+    <div class="links-row">
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8eb4NxvpRxMRz8BQaF9ujLE" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Leggi le recensioni</a>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ8eb4NxvpRxMRz8BQaF9ujLE" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Lascia una recensione</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="head center">
+      <div class="kicker">Domande frequenti</div>
+      <h2>Prima della visita</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Come prenoto una visita?</summary><p>Telefonando al 379 103 2243. Lo stesso numero vale per Bari (venerdì) e per Foggia (giovedì).</p></details>
+      <details><summary>Cosa devo portare?</summary><p>Gli esami già fatti (CD o link delle immagini di risonanza, TAC o radiografie, con i referti), eventuali visite specialistiche precedenti e l'elenco dei farmaci che assumi.</p></details>
+      <details><summary>Ho già una proposta di intervento: posso chiedere un secondo parere?</summary><p>Sì. Porta gli esami e la relazione che ti è stata consegnata: li valutiamo insieme e ti spiego le alternative possibili.</p></details>
+      <details><summary>Il mal di schiena si opera sempre?</summary><p>No. Nella maggior parte dei casi di patologia degenerativa della colonna si parte da terapie conservative; la chirurgia è indicata solo in situazioni specifiche, valutate caso per caso.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Prenota la tua visita</h2>
+    <p>Bari il venerdì e Foggia il giovedì, dalle 14 alle 20. Un solo numero per entrambe le sedi.</p>
+    <a href="tel:+393791032243" class="btn btn-primary">379 103 2243</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Dott. Antonio Colamaria</strong><br>
+      Medico chirurgo · Specialista in Neurochirurgia<br>
+      Bari · Foggia · 379 103 2243
+    </div>
+    <div class="disclaimer">Le informazioni di questo sito hanno carattere informativo e non sostituiscono la visita medica.<br>Privacy Policy · Cookie Policy</div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+393791032243" class="btn btn-primary">Chiama per prenotare</a></div>
+
+</body>
+</html>
