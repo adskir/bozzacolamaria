@@ -224,7 +224,21 @@ section{padding:84px 0}
 .stars{font-size:28px;color:var(--amber);letter-spacing:4px}
 .score{font-family:'Fraunces',serif;font-size:48px;line-height:1;margin:8px 0 6px}
 .reviews p{color:var(--ink-soft)}
-.reviews .links-row{justify-content:center;margin-top:24px}
+.reviews .links-row{justify-content:center;margin-top:30px}
+.rev-h{font-size:clamp(27px,3.4vw,38px)}
+.rev-score{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0 34px;color:var(--ink-soft)}
+.rev-score .stars{font-size:20px;letter-spacing:2px}
+.rev-score b{font-family:'Fraunces',serif;font-weight:500;font-size:26px;color:var(--ink)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:left;align-items:start}
+.rev{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 24px 20px}
+.rev-stars{color:var(--amber);letter-spacing:2px;font-size:16px}
+.rev-text{margin:10px 0 0;font-size:15px;color:var(--ink);line-height:1.6;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden}
+.rev.open .rev-text{display:block}
+.rev-more{margin-top:6px;background:none;border:0;padding:0;color:var(--teal);font:600 14px 'Inter',sans-serif;cursor:pointer}
+.rev figcaption{display:flex;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--paper-2);font-size:14px}
+.rev figcaption a{margin-left:auto;color:var(--teal);font-weight:600;font-size:13px;white-space:nowrap}
+.av{width:32px;height:32px;border-radius:50%;background:var(--teal-light);color:var(--teal-deep);display:grid;place-items:center;font-weight:600}
+@media(max-width:760px){.rev-grid{grid-template-columns:1fr}}
 
 /* faq */
 .faq{max-width:780px;margin:0 auto}
@@ -455,14 +469,39 @@ footer .credit a{color:var(--teal-deep);font-weight:600}
   </div>
 </section>
 
-<section class="reviews">
+<section class="reviews" id="recensioni">
   <div class="wrap">
     <div class="kicker">Recensioni</div>
-    <div class="stars" aria-hidden="true">★★★★★</div>
-    <div class="score">4,5</div>
-    <p>su Google, dalle recensioni dei pazienti</p>
+    <h2 class="rev-h">Cosa dicono i pazienti</h2>
+    <div class="rev-score"><span class="stars" aria-hidden="true">★★★★★</span><b>4,5</b><span>su Google</span></div>
+    <div class="rev-grid">
+      <figure class="rev">
+        <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
+        <blockquote class="rev-text">Sono stato ricoverato dieci giorni presso il Reparto di Neurochirurgia del prof. Colamaria per l&#x27;asportazione di un neurinoma nella zona lombare della colonna vertebrale. In tale circostanza ho potuto apprezzare le qualità morali e professionali dello staff (dagli OS, agli infermieri e dottori tutti) il quale è intriso di valori etici, vocazionali ma soprattutto professionali. L&#x27;ospedale Riuniti deve essere orgoglioso della sua eccellenza: Neurochirurgia!</blockquote>
+        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <figcaption><span class="av" aria-hidden="true">R</span><b>Roberto Roberto</b><a href="https://share.google/oZbVhh4xeSfmyc0vO" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
+        <blockquote class="rev-text">Dopo circa 4 anni di convivenza con dolori , giramenti di testa vertigini, mal di testa, dolori lombari , finalmente abbiamo prenotato visita neurochirurgica dal dott. Colamaria, ci ha dato piena fiducia dal primo impatto, ci ha prescritto una serie di esami tra tac, risonanza ecc, appena pronti tutti gli esami , ha riscontrato un ernia cervicale da intervento, noi subito allarmati, ma lui con professionalità, serenità e tranquillità, ci ha rassicurati di stare tranquilli , subito prenotato intervento chirurgico al policlinico di Foggia, dopo 10 giorni ci hanno chiamato, intervento, tre giorni di degenza in ospedale, subito dimissioni, intervento riuscito perfettamente grazie al dott, Colamaria e&#x27; il suo equipe medico , mia moglie è rinata veramente una cosa da non credere, dopo aver trascorso tutto dicembre e metà gennaio perennemente a letto mia moglie e &#x27; ritornata a camminare passeggiare non ha più nessun dolore, è per altro soffriva di pressione alta da 15 anni oggi è ritornato tutto nella norma, a eliminato pure la pillola della pressione, un vero professionista, non aggiungo altro grazie ancora Antonio Colamaria, sei un vero professionista serio , grazie di tutto</blockquote>
+        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <figcaption><span class="av" aria-hidden="true">G</span><b>Recensione su Google</b><a href="https://share.google/p5bYbDEppxoATuacg" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
+        <blockquote class="rev-text">Medico empatico che mette e proprio agio i pazienti, fornisce in maniera chiara ed esaustiva le informazioni sulla diagnosi e sulla terapia. Mia moglie è stata operata per una stenosi, il dottore ha fornito tutte le informazioni sull &#x27;intervento ed ha seguito la fase post operatoria in prima persona. Il personale del reparto di neurochirurgia del Policlinico di Foggia diretto dal dottor Colamaria è cortese e molto disponibile, unico neo della struttura è che purtroppo è ubicato nel vecchio ospedale, che lascia a desiderare</blockquote>
+        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <figcaption><span class="av" aria-hidden="true">G</span><b>Giuseppe Malerba</b><a href="https://share.google/PxX2yl9j1KIm8pj7t" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
+        <blockquote class="rev-text">Sono stata operata dal dottor Antonio Colamaria presso il reparto di UOC di neurochirurgia del Policlinico “Riuniti” di Foggia di cui è direttore. Ha eseguito con perizia e precisione un intervento molto delicato. La sua chiarezza nell’espormi i rischi a cui andavo incontro ma anche la pazienza con cui ha risposto a tutti i miei numerosi quesiti, mi hanno dato subito la certezza di essere nelle mani di un professionista serio, preparato e con delle grandi competenze oltre che ad un medico empatico e rassicurante, nonostante la situazione complicata della mia malattia.<br>Vorrei aggiungere che anche il reparto di neurochirurgia da lui diretto funziona molto bene, con una elevata attenzione al paziente sia da parte del personale medico, infermieristico e paramedico.<br>Un grazie sincero al dottor Colamaria per quanto ogni giorno fa.<br>Delia Bavaro</blockquote>
+        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <figcaption><span class="av" aria-hidden="true">D</span><b>Delia Bavaro</b><a href="https://share.google/cAZnsXzcZnndux5iy" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
+      </figure>
+    </div>
     <div class="links-row">
-      <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8eb4NxvpRxMRz8BQaF9ujLE" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Leggi le recensioni</a>
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJ8eb4NxvpRxMRz8BQaF9ujLE" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Tutte le recensioni su Google</a>
       <a href="https://search.google.com/local/writereview?placeid=ChIJ8eb4NxvpRxMRz8BQaF9ujLE" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Lascia una recensione</a>
     </div>
   </div>
@@ -518,6 +557,10 @@ footer .credit a{color:var(--teal-deep);font-weight:600}
 
 <div class="callbar"><a href="tel:+393791032243" class="btn btn-primary">Chiama per prenotare</a></div>
 <a class="wa-float" href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." target="_blank" rel="noopener" aria-label="Scrivi su WhatsApp per prenotare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></a>
+<script>
+document.querySelectorAll('.rev').forEach(r=>{const t=r.querySelector('.rev-text'),b=r.querySelector('.rev-more');
+  if(t.scrollHeight>t.clientHeight+4){b.hidden=false;b.onclick=()=>{r.classList.toggle('open');b.textContent=r.classList.contains('open')?'Mostra meno':'Leggi tutta'}}});
+</script>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 
 </body>
