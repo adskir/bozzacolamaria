@@ -14,6 +14,7 @@ Sito statico (index.html + privacy.html + cookie.html), preparato da ClickBari.
 - Iscrizione all'Ordine dei Medici: provincia e numero (per il footer).
 - Privacy: indirizzo, C.F./P. IVA, email di contatto.
 - Video e foto (congressi, reparto, interviste) per la sezione media.
+- Approvare il testo del blocco «Chi sono» in home (scritto da noi, in prima persona).
 
 ## Da fare
 - Blocco recensioni Google (testi reali dalla scheda GBP).
