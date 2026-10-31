@@ -5,23 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dott. Antonio Colamaria — Neurochirurgo a Bari e Foggia</title>
 <meta name="description" content="Dott. Antonio Colamaria, specialista in Neurochirurgia. Visite a Bari (Casa di Cura La Madonnina, venerdì) e a Foggia (via Napoli 6, giovedì). Patologie cerebrali, della colonna vertebrale e dei nervi periferici.">
-<!-- BOZZA: noindex finché non diventa il sito ufficiale -->
+<!-- Anteprima su Netlify: noindex. AL LANCIO su antoniocolamaria.it togliere questa riga e il file _headers -->
 <meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://antoniocolamaria.it/">
+<meta name="theme-color" content="#1F5C55">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Dott. Antonio Colamaria">
+<meta property="og:title" content="Dott. Antonio Colamaria — Neurochirurgo a Bari e Foggia">
+<meta property="og:description" content="Visite di neurochirurgia a Bari (venerdì) e Foggia (giovedì). Cervello, colonna vertebrale e nervi periferici. Prenotazioni: 379 103 2243.">
+<meta property="og:url" content="https://antoniocolamaria.it/">
+<meta property="og:image" content="https://antoniocolamaria.it/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="img/dott-antonio-colamaria.webp" as="image" type="image/webp">
 <link rel="preload" href="fonts/fraunces-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Dott. Antonio Colamaria",
-  "medicalSpecialty": "Neurosurgery",
-  "jobTitle": "Direttore della Neurochirurgia, Policlinico Riuniti di Foggia",
-  "sameAs": ["https://www.doctolib.it/neurochirurgo/bari/antonio-colamaria","https://www.miodottore.it/antonio-colamaria/neurochirurgo/bari","https://www.medicitalia.it/acolamaria/"],
-  "telephone": "+39 379 103 2243",
-  "image": "https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_Foto_DOC.png",
-  "address": [
-    {"@type": "PostalAddress", "streetAddress": "Viale Louis Pasteur, 18 (Casa di Cura La Madonnina)", "addressLocality": "Bari", "postalCode": "70124", "addressCountry": "IT"},
-    {"@type": "PostalAddress", "streetAddress": "Via Napoli, 6", "addressLocality": "Foggia", "addressCountry": "IT"}
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://antoniocolamaria.it/#antonio",
+      "name": "Antonio Colamaria",
+      "honorificPrefix": "Dott.",
+      "jobTitle": "Direttore della Neurochirurgia",
+      "worksFor": {"@type": "Hospital", "name": "Policlinico Riuniti di Foggia", "address": {"@type": "PostalAddress", "addressLocality": "Foggia", "addressCountry": "IT"}},
+      "alumniOf": {"@type": "CollegeOrUniversity", "name": "Università degli Studi di Bari"},
+      "image": "https://antoniocolamaria.it/img/dott-antonio-colamaria.webp",
+      "url": "https://antoniocolamaria.it/",
+      "sameAs": [
+        "https://www.linkedin.com/in/antonio-colamaria-a13306196/",
+        "https://www.facebook.com/AntonioColamariaNeurochirurgo",
+        "https://www.doctolib.it/neurochirurgo/bari/antonio-colamaria",
+        "https://www.miodottore.it/antonio-colamaria/neurochirurgo/bari",
+        "https://www.medicitalia.it/acolamaria/"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://antoniocolamaria.it/#bari",
+      "name": "Dott. Antonio Colamaria — Neurochirurgo a Bari",
+      "medicalSpecialty": "Neurosurgery",
+      "url": "https://antoniocolamaria.it/",
+      "image": "https://antoniocolamaria.it/img/dott-antonio-colamaria.webp",
+      "telephone": "+393791032243",
+      "address": {"@type": "PostalAddress", "streetAddress": "Viale Louis Pasteur, 18 (Casa di Cura La Madonnina)", "addressLocality": "Bari", "postalCode": "70124", "addressRegion": "BA", "addressCountry": "IT"},
+      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:00", "closes": "20:00"}],
+      "employee": {"@id": "https://antoniocolamaria.it/#antonio"},
+      "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ8eb4NxvpRxMRz8BQaF9ujLE"
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://antoniocolamaria.it/#foggia",
+      "name": "Dott. Antonio Colamaria — Neurochirurgo a Foggia",
+      "medicalSpecialty": "Neurosurgery",
+      "url": "https://antoniocolamaria.it/",
+      "image": "https://antoniocolamaria.it/img/dott-antonio-colamaria.webp",
+      "telephone": "+393791032243",
+      "address": {"@type": "PostalAddress", "streetAddress": "Via Napoli, 6", "addressLocality": "Foggia", "addressRegion": "FG", "addressCountry": "IT"},
+      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "14:00", "closes": "20:00"}],
+      "employee": {"@id": "https://antoniocolamaria.it/#antonio"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Come prenoto una visita?", "acceptedAnswer": {"@type": "Answer", "text": "Telefonando o scrivendo su WhatsApp al 379 103 2243, lo stesso numero per Bari (venerdì) e Foggia (giovedì), oppure online su Doctolib, MioDottore o MedicItalia."}},
+        {"@type": "Question", "name": "Cosa devo portare?", "acceptedAnswer": {"@type": "Answer", "text": "Gli esami già fatti (CD o link delle immagini di risonanza, TAC o radiografie, con i referti), eventuali visite specialistiche precedenti e l'elenco dei farmaci che assumi."}},
+        {"@type": "Question", "name": "Ho già una proposta di intervento: posso chiedere un secondo parere?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Porta gli esami e la relazione che ti è stata consegnata: li valutiamo insieme e ti spiego le alternative possibili."}},
+        {"@type": "Question", "name": "Il mal di schiena si opera sempre?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nella maggior parte dei casi di patologia degenerativa della colonna si parte da terapie conservative; la chirurgia è indicata solo in situazioni specifiche, valutate caso per caso."}}
+      ]
+    }
   ]
 }
 </script>
@@ -47,10 +105,6 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.0
 :focus-visible{outline:3px solid var(--amber);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 
-/* bozza */
-.draft{background:var(--ink);color:#C9D6D2;font-size:12.5px;text-align:center;padding:7px 16px}
-.draft b{color:#fff;font-weight:600}
-.draft a{color:#fff;text-decoration:underline;text-underline-offset:2px}
 
 /* nav */
 header{position:sticky;top:0;z-index:50;background:rgba(242,245,243,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -82,7 +136,7 @@ nav .btn{color:#fff}
 .fact{border-top:1px solid var(--line);padding-top:12px}
 .fact b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:26px;color:var(--teal-deep);line-height:1.1}
 .fact span{font-size:13px;color:var(--ink-soft)}
-.portrait{position:relative;background:var(--teal-light);border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;max-width:420px;justify-self:end;width:100%}
+.portrait{position:relative;background:#fff;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;max-width:420px;justify-self:end;width:100%}
 .portrait img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .portrait figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(255,255,255,.94);border-radius:var(--r-md);padding:12px 14px;font-size:13.5px}
 .portrait figcaption strong{display:block;font-size:15px}
@@ -189,29 +243,46 @@ details p{padding:0 22px 18px;color:var(--ink-soft);font-size:15px}
 .cta .btn-primary:hover{background:#9E7526}
 
 /* footer */
-footer{padding:44px 0 90px;font-size:13.5px;color:var(--ink-soft)}
+footer{padding:44px 0 100px;font-size:13.5px;color:var(--ink-soft)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
 footer strong{color:var(--ink);font-family:'Fraunces',serif;font-weight:500;font-size:17px}
 footer a{color:var(--ink-soft)}
 .disclaimer{max-width:520px}
 
+/* social, piattaforme, footer */
+.social svg{width:18px;height:18px;fill:currentColor;flex:0 0 auto}
+.btn-wa{background:#25D366;color:#0B3B20}
+.btn-wa:hover{background:#1FBF5B;transform:translateY(-1px)}
+.cta-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.online a.plat{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ink);border-color:#fff;padding:8px 16px 8px 8px;font-weight:600}
+.online a.plat:hover{border-color:#9CC4BC;transform:translateY(-1px)}
+.plat i{display:grid;place-items:center;width:26px;height:26px;border-radius:7px;color:#fff;font-style:normal;font-weight:700;font-size:14px}
+.foot-social{display:flex;gap:10px;align-items:flex-start}
+.foot-social a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--teal-deep);background:#fff}
+.foot-social a:hover{border-color:var(--teal)}
+.foot-social svg{width:18px;height:18px;fill:currentColor}
+footer .credit{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px}
+footer .credit a{color:var(--teal-deep);font-weight:600}
+.wa-float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:61;transition:transform .2s}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
 /* barra chiamata mobile */
 .callbar{display:none}
 @media(max-width:700px){
-  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;box-shadow:0 8px 24px rgba(16,35,59,.25)}
+  .callbar{display:flex;position:fixed;left:12px;right:84px;bottom:12px;z-index:60;box-shadow:0 8px 24px rgba(16,35,59,.25)}
   .callbar .btn{flex:1;padding:15px}
   nav .btn{display:none}
+  .wa-float{right:12px;bottom:12px;width:56px;height:56px}
   header .wrap{height:64px}
 }
 </style>
 </head>
 <body>
 
-<div class="draft"><b>Bozza di proposta</b> · anteprima preparata da <a href="https://clickbari.it" target="_blank" rel="noopener">ClickBari</a>, non è il sito ufficiale</div>
-
 <header>
   <div class="wrap">
-    <a href="#" class="brand"><strong>Dott. Antonio Colamaria</strong><span>Neurochirurgo · Bari e Foggia</span></a>
+    <a href="/" class="brand"><strong>Dott. Antonio Colamaria</strong><span>Neurochirurgo · Bari e Foggia</span></a>
     <nav aria-label="Menu principale">
       <a href="#patologie">Patologie</a>
       <a href="#chi-sono">Chi sono</a>
@@ -232,7 +303,7 @@ footer a{color:var(--ink-soft)}
       <p class="lede">Visite specialistiche in neurochirurgia: una valutazione chiara degli esami e delle opzioni di cura, conservative quando è possibile, chirurgiche quando servono.</p>
       <div class="hero-actions">
         <a href="tel:+393791032243" class="btn btn-primary">Chiama per prenotare</a>
-        <a href="#sedi" class="btn btn-ghost">Sedi e orari</a>
+        <a href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." class="btn btn-ghost social" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>WhatsApp</a>
       </div>
       <div class="facts">
         <div class="fact"><b>Direttore</b><span>Neurochirurgia, Policlinico Riuniti di Foggia</span></div>
@@ -241,7 +312,7 @@ footer a{color:var(--ink-soft)}
       </div>
     </div>
     <figure class="portrait">
-      <img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_Foto_DOC.png" alt="Dott. Antonio Colamaria, neurochirurgo" width="420" height="525">
+      <img src="img/dott-antonio-colamaria.webp" alt="Il Dott. Antonio Colamaria, neurochirurgo, alla scrivania del suo studio" width="840" height="758" fetchpriority="high">
       <figcaption><strong>Dott. Antonio Colamaria</strong>Direttore della Neurochirurgia, Policlinico Riuniti di Foggia</figcaption>
     </figure>
   </div>
@@ -256,7 +327,7 @@ footer a{color:var(--ink-soft)}
     </div>
     <div class="zones">
       <article class="zone">
-        <div class="zone-img"><img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_imm_patologie-10.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="zone-img"><img src="img/patologie-cervello.webp" alt="Risonanza magnetica dell'encefalo" width="640" height="596" loading="lazy" decoding="async"></div>
         <div class="zone-body">
           <span class="zone-tag">01 · Encefalo</span>
           <h3>Patologie cerebrali</h3>
@@ -266,7 +337,7 @@ footer a{color:var(--ink-soft)}
         </div>
       </article>
       <article class="zone">
-        <div class="zone-img"><img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_imm_patologie-11.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="zone-img"><img src="img/patologie-colonna.webp" alt="Radiografia della colonna vertebrale" width="640" height="596" loading="lazy" decoding="async"></div>
         <div class="zone-body">
           <span class="zone-tag">02 · Colonna</span>
           <h3>Patologie vertebrali</h3>
@@ -275,7 +346,7 @@ footer a{color:var(--ink-soft)}
         </div>
       </article>
       <article class="zone">
-        <div class="zone-img"><img src="https://antoniocolamaria.it/wp-content/uploads/2025/03/Colamaria_imm_patologie-12.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="zone-img"><img src="img/patologie-nervi.webp" alt="Nervi periferici della mano" width="640" height="596" loading="lazy" decoding="async"></div>
         <div class="zone-body">
           <span class="zone-tag">03 · Nervi periferici</span>
           <h3>Sistema nervoso periferico</h3>
@@ -313,8 +384,8 @@ footer a{color:var(--ink-soft)}
       <p>Mi sono laureato in Medicina e Chirurgia all'Università di Bari, con una tesi sul vasospasmo cerebrale dopo emorragia subaracnoidea, e nella stessa università mi sono specializzato in Neurochirurgia.</p>
       <p>Oggi dirigo la Neurochirurgia del Policlinico Riuniti di Foggia e mi occupo di tutte le patologie di interesse neurochirurgico. In visita dedico il tempo necessario a guardare gli esami insieme al paziente e a spiegare le opzioni, con parole chiare.</p>
       <div class="links-row">
-        <a href="https://antoniocolamaria.it/curriculum-vitae/" class="btn btn-ghost btn-sm">Curriculum completo</a>
-        <a href="https://antoniocolamaria.it/pubblicazioni/" class="btn btn-ghost btn-sm">Pubblicazioni</a>
+        <a href="https://www.linkedin.com/in/antonio-colamaria-a13306196/" class="btn btn-ghost btn-sm social" target="_blank" rel="noopener me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn</a>
+        <a href="https://www.facebook.com/AntonioColamariaNeurochirurgo" class="btn btn-ghost btn-sm social" target="_blank" rel="noopener me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.45A20 20 0 0 0 14.3 4.3c-2.25 0-3.8 1.37-3.8 3.9v2.3H8v3h2.5V21h3Z"/></svg>Facebook</a>
       </div>
     </div>
     <ol class="timeline">
@@ -335,7 +406,7 @@ footer a{color:var(--ink-soft)}
       <h2>Come si svolge</h2>
     </div>
     <div class="steps">
-      <div class="step"><div class="n">1</div><h3>Prenota</h3><p>Chiama il 379 103 2243 e scegli la sede: Bari il venerdì, Foggia il giovedì, dalle 14 alle 20.</p></div>
+      <div class="step"><div class="n">1</div><h3>Prenota</h3><p>Chiama o scrivi su WhatsApp al 379 103 2243 e scegli la sede: Bari il venerdì, Foggia il giovedì, dalle 14 alle 20.</p></div>
       <div class="step"><div class="n">2</div><h3>Porta gli esami</h3><p>Risonanza, TAC o radiografie (immagini e referti), eventuali visite precedenti e l'elenco dei farmaci che assumi.</p></div>
       <div class="step"><div class="n">3</div><h3>Valutazione e piano</h3><p>Analizziamo insieme gli esami e definiamo il percorso: terapie conservative, altri accertamenti o, se serve, l'intervento.</p></div>
     </div>
@@ -377,9 +448,9 @@ footer a{color:var(--ink-soft)}
     </div>
     <div class="online">
       <span>Puoi prenotare anche online:</span>
-      <a href="https://www.doctolib.it/neurochirurgo/bari/antonio-colamaria" target="_blank" rel="noopener">Doctolib</a>
-      <a href="https://www.miodottore.it/antonio-colamaria/neurochirurgo/bari" target="_blank" rel="noopener">MioDottore</a>
-      <a href="https://www.medicitalia.it/acolamaria/" target="_blank" rel="noopener">MedicItalia</a>
+      <a class="plat" href="https://www.doctolib.it/neurochirurgo/bari/antonio-colamaria" target="_blank" rel="noopener"><i style="background:#107ACA" aria-hidden="true">D</i>Doctolib</a>
+      <a class="plat" href="https://www.miodottore.it/antonio-colamaria/neurochirurgo/bari" target="_blank" rel="noopener"><i style="background:#00C3A5" aria-hidden="true">M</i>MioDottore</a>
+      <a class="plat" href="https://www.medicitalia.it/acolamaria/" target="_blank" rel="noopener"><i style="background:#E2483D" aria-hidden="true">+</i>MedicItalia</a>
     </div>
   </div>
 </section>
@@ -404,7 +475,7 @@ footer a{color:var(--ink-soft)}
       <h2>Prima della visita</h2>
     </div>
     <div class="faq">
-      <details><summary>Come prenoto una visita?</summary><p>Telefonando al 379 103 2243, lo stesso numero per Bari (venerdì) e Foggia (giovedì), oppure online su Doctolib, MioDottore o MedicItalia.</p></details>
+      <details><summary>Come prenoto una visita?</summary><p>Telefonando o scrivendo su WhatsApp al 379 103 2243, lo stesso numero per Bari (venerdì) e Foggia (giovedì), oppure online su Doctolib, MioDottore o MedicItalia.</p></details>
       <details><summary>Cosa devo portare?</summary><p>Gli esami già fatti (CD o link delle immagini di risonanza, TAC o radiografie, con i referti), eventuali visite specialistiche precedenti e l'elenco dei farmaci che assumi.</p></details>
       <details><summary>Ho già una proposta di intervento: posso chiedere un secondo parere?</summary><p>Sì. Porta gli esami e la relazione che ti è stata consegnata: li valutiamo insieme e ti spiego le alternative possibili.</p></details>
       <details><summary>Il mal di schiena si opera sempre?</summary><p>No. Nella maggior parte dei casi di patologia degenerativa della colonna si parte da terapie conservative; la chirurgia è indicata solo in situazioni specifiche, valutate caso per caso.</p></details>
@@ -416,7 +487,10 @@ footer a{color:var(--ink-soft)}
   <div class="wrap">
     <h2>Prenota la tua visita</h2>
     <p>Bari il venerdì e Foggia il giovedì, dalle 14 alle 20. Un solo numero per entrambe le sedi.</p>
-    <a href="tel:+393791032243" class="btn btn-primary">379 103 2243</a>
+    <div class="cta-actions">
+      <a href="tel:+393791032243" class="btn btn-primary">Chiama 379 103 2243</a>
+      <a href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." class="btn btn-wa social" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>Scrivi su WhatsApp</a>
+    </div>
   </div>
 </section>
 
@@ -429,11 +503,22 @@ footer a{color:var(--ink-soft)}
       Direttore della Neurochirurgia · Policlinico Riuniti di Foggia<br>
       Bari · Foggia · 379 103 2243
     </div>
-    <div class="disclaimer">Le informazioni di questo sito hanno carattere informativo e non sostituiscono la visita medica.<br>Privacy Policy · Cookie Policy</div>
+    <div class="foot-social">
+      <a href="https://www.linkedin.com/in/antonio-colamaria-a13306196/" target="_blank" rel="noopener me" aria-label="LinkedIn del Dott. Colamaria"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg></a>
+      <a href="https://www.facebook.com/AntonioColamariaNeurochirurgo" target="_blank" rel="noopener me" aria-label="Facebook del Dott. Colamaria"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.45A20 20 0 0 0 14.3 4.3c-2.25 0-3.8 1.37-3.8 3.9v2.3H8v3h2.5V21h3Z"/></svg></a>
+      <a href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." target="_blank" rel="noopener" aria-label="WhatsApp per prenotare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></a>
+    </div>
+    <div class="disclaimer">Le informazioni di questo sito hanno carattere informativo e non sostituiscono la visita medica.<br><a href="privacy.html">Privacy Policy</a> · <a href="cookie.html">Cookie Policy</a></div>
+  </div>
+  <div class="wrap credit">
+    <span>© <span id="y">2026</span> Dott. Antonio Colamaria</span>
+    <span>Sito realizzato da <a href="https://clickbari.it" target="_blank" rel="noopener">ClickBari</a></span>
   </div>
 </footer>
 
 <div class="callbar"><a href="tel:+393791032243" class="btn btn-primary">Chiama per prenotare</a></div>
+<a class="wa-float" href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." target="_blank" rel="noopener" aria-label="Scrivi su WhatsApp per prenotare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></a>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 
 </body>
 </html>

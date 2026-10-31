@@ -1,6 +1,16 @@
-# Bozza — sito Dott. Antonio Colamaria
+# Sito — Dott. Antonio Colamaria
 
-Anteprima statica (index.html) preparata da ClickBari per proporre il nuovo sito.
-- `noindex` attivo: è una bozza, non deve finire su Google.
-- Immagini caricate dal sito attuale antoniocolamaria.it (da scaricare in locale prima della messa online).
-- Da completare prima della pubblicazione: Privacy e Cookie Policy, verifica dei numeri del CV (interventi), foto della sede di Foggia.
+Sito statico (index.html + privacy.html + cookie.html), preparato da ClickBari.
+
+## Prima del lancio su antoniocolamaria.it
+- Togliere `<meta name="robots" content="noindex...">` da index.html e cancellare il file `_headers`.
+- Completare nella Privacy Policy i dati segnati [da completare]: indirizzo, C.F./P. IVA, email.
+- Aggiungere nel footer l'iscrizione all'Ordine dei Medici (provincia e numero).
+- Verificare con il Dottore: "1.600+ interventi", rating Google, WhatsApp attivo sul 379 103 2243.
+- Inviare sitemap.xml a Google Search Console.
+
+## Da fare
+- Blocco recensioni Google (testi reali dalla scheda GBP).
+- Loghi ufficiali Doctolib / MioDottore / MedicItalia (ora badge provvisori).
+- Pagina Pubblicazioni (13 titoli dal vecchio sito, poi gli articoli).
+- Pagine per patologia (SEO) dopo la ricerca parole chiave.
