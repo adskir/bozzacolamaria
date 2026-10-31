@@ -102,6 +102,13 @@ section{padding:84px 0}
 .timeline .t{font-weight:600}
 .timeline .d{font-size:14px;color:var(--ink-soft)}
 .links-row{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+.about{align-items:center}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-stats .stat{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 22px}
+.about-stats .stat b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:34px;color:var(--teal-deep);line-height:1.1;margin-bottom:6px}
+.about-stats .stat span{font-size:14px;color:var(--ink-soft);line-height:1.45;display:block}
+.btn.icon-only{width:42px;height:42px;padding:0;border-radius:50%}
+@media(max-width:480px){.about-stats{gap:10px}.about-stats .stat{padding:16px 14px}.about-stats .stat b{font-size:26px}.about-stats .stat span{font-size:13px}}
 @media(max-width:860px){.about{grid-template-columns:1fr;gap:28px}}
 
 /* visita */
