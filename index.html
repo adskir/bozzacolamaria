@@ -74,7 +74,7 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "Come prenoto una visita?", "acceptedAnswer": {"@type": "Answer", "text": "Telefonando o scrivendo su WhatsApp alla segreteria al 379 103 2243, lo stesso numero per Bari (venerdì) e Foggia (giovedì), oppure online su Doctolib, MioDottore o MedicItalia."}},
+        {"@type": "Question", "name": "Come prenoto una visita?", "acceptedAnswer": {"@type": "Answer", "text": "Telefonando o scrivendo su WhatsApp alla segreteria al 379 103 2243, lo stesso numero per Bari (venerdì) e Foggia (giovedì)."}},
         {"@type": "Question", "name": "Cosa devo portare?", "acceptedAnswer": {"@type": "Answer", "text": "Gli esami già fatti (CD o link delle immagini di risonanza, TAC o radiografie, con i referti), eventuali visite specialistiche precedenti e l'elenco dei farmaci che assumi."}},
         {"@type": "Question", "name": "Ho già una proposta di intervento: posso chiedere un secondo parere?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Porta gli esami e la relazione che ti è stata consegnata: li valutiamo insieme e ti spiego le alternative possibili."}},
         {"@type": "Question", "name": "Il mal di schiena si opera sempre?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nella maggior parte dei casi di patologia degenerativa della colonna si parte da terapie conservative; la chirurgia è indicata solo in situazioni specifiche, valutate caso per caso."}}
@@ -230,11 +230,13 @@ section{padding:84px 0}
 .rev-score .stars{font-size:20px;letter-spacing:2px}
 .rev-score b{font-family:'Fraunces',serif;font-weight:500;font-size:26px;color:var(--ink)}
 .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:left;align-items:start}
+.rev{display:flex;flex-direction:column}
 .rev{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 24px 20px}
 .rev-stars{color:var(--amber);letter-spacing:2px;font-size:16px}
-.rev-text{margin:10px 0 0;font-size:15px;color:var(--ink);line-height:1.6;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden}
+.rev-text{margin:10px 0 0;font-size:15px;color:var(--ink);line-height:1.6;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden;height:calc(1.6em * 6)}
+.rev.open .rev-text{height:auto}
 .rev.open .rev-text{display:block}
-.rev-more{margin-top:6px;background:none;border:0;padding:0;color:var(--teal);font:600 14px 'Inter',sans-serif;cursor:pointer}
+.rev-more{align-self:flex-start;margin-top:6px;background:none;border:0;padding:0;color:var(--teal);font:600 14px 'Inter',sans-serif;cursor:pointer}
 .rev figcaption{display:flex;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--paper-2);font-size:14px}
 .rev figcaption a{margin-left:auto;color:var(--teal);font-weight:600;font-size:13px;white-space:nowrap}
 .av{width:32px;height:32px;border-radius:50%;background:var(--teal-light);color:var(--teal-deep);display:grid;place-items:center;font-weight:600}
@@ -461,7 +463,7 @@ footer .credit a{color:var(--teal-deep);font-weight:600}
       </div>
     </div>
     <div class="online">
-      <span>Puoi prenotare anche online:</span>
+      <span>Mi trovi anche su:</span>
       <a class="plat" href="https://www.doctolib.it/neurochirurgo/bari/antonio-colamaria" target="_blank" rel="noopener"><i style="background:#107ACA" aria-hidden="true">D</i>Doctolib</a>
       <a class="plat" href="https://www.miodottore.it/antonio-colamaria/neurochirurgo/bari" target="_blank" rel="noopener"><i style="background:#00C3A5" aria-hidden="true">M</i>MioDottore</a>
       <a class="plat" href="https://www.medicitalia.it/acolamaria/" target="_blank" rel="noopener"><i style="background:#E2483D" aria-hidden="true">+</i>MedicItalia</a>
@@ -478,25 +480,25 @@ footer .credit a{color:var(--teal-deep);font-weight:600}
       <figure class="rev">
         <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
         <blockquote class="rev-text">Sono stato ricoverato dieci giorni presso il Reparto di Neurochirurgia del prof. Colamaria per l&#x27;asportazione di un neurinoma nella zona lombare della colonna vertebrale. In tale circostanza ho potuto apprezzare le qualità morali e professionali dello staff (dagli OS, agli infermieri e dottori tutti) il quale è intriso di valori etici, vocazionali ma soprattutto professionali. L&#x27;ospedale Riuniti deve essere orgoglioso della sua eccellenza: Neurochirurgia!</blockquote>
-        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <button class="rev-more" type="button" style="visibility:hidden">Leggi tutta</button>
         <figcaption><span class="av" aria-hidden="true">R</span><b>Roberto Roberto</b><a href="https://share.google/oZbVhh4xeSfmyc0vO" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
       </figure>
       <figure class="rev">
         <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
         <blockquote class="rev-text">Dopo circa 4 anni di convivenza con dolori , giramenti di testa vertigini, mal di testa, dolori lombari , finalmente abbiamo prenotato visita neurochirurgica dal dott. Colamaria, ci ha dato piena fiducia dal primo impatto, ci ha prescritto una serie di esami tra tac, risonanza ecc, appena pronti tutti gli esami , ha riscontrato un ernia cervicale da intervento, noi subito allarmati, ma lui con professionalità, serenità e tranquillità, ci ha rassicurati di stare tranquilli , subito prenotato intervento chirurgico al policlinico di Foggia, dopo 10 giorni ci hanno chiamato, intervento, tre giorni di degenza in ospedale, subito dimissioni, intervento riuscito perfettamente grazie al dott, Colamaria e&#x27; il suo equipe medico , mia moglie è rinata veramente una cosa da non credere, dopo aver trascorso tutto dicembre e metà gennaio perennemente a letto mia moglie e &#x27; ritornata a camminare passeggiare non ha più nessun dolore, è per altro soffriva di pressione alta da 15 anni oggi è ritornato tutto nella norma, a eliminato pure la pillola della pressione, un vero professionista, non aggiungo altro grazie ancora Antonio Colamaria, sei un vero professionista serio , grazie di tutto</blockquote>
-        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <button class="rev-more" type="button" style="visibility:hidden">Leggi tutta</button>
         <figcaption><span class="av" aria-hidden="true">E</span><b>Eugenio Traversa</b><a href="https://share.google/p5bYbDEppxoATuacg" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
       </figure>
       <figure class="rev">
         <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
         <blockquote class="rev-text">Sono stata ricoverata recentemente presso il reparto di neurochirurgia di Foggia dove sono stata assistita da tutto il personale con grande professionalità e umanità. Questo ha alleviato le sofferenze di quel momento. Un ringraziamento particolare al dirigente dott. Colamaria per la professionalità, cura e attenzione che ha avuto, oltre che nell&#x27;esecuzione dell&#x27;intervento, durante tutta la degenza. Grazie</blockquote>
-        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <button class="rev-more" type="button" style="visibility:hidden">Leggi tutta</button>
         <figcaption><span class="av" aria-hidden="true">A</span><b>Anna Valenza</b><a href="https://share.google/kr8IRh9aucrmlOOM9" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
       </figure>
       <figure class="rev">
         <div class="rev-stars" aria-label="5 stelle su 5">★★★★★</div>
         <blockquote class="rev-text">Sono stata operata dal dottor Antonio Colamaria presso il reparto di UOC di neurochirurgia del Policlinico “Riuniti” di Foggia di cui è direttore. Ha eseguito con perizia e precisione un intervento molto delicato. La sua chiarezza nell’espormi i rischi a cui andavo incontro ma anche la pazienza con cui ha risposto a tutti i miei numerosi quesiti, mi hanno dato subito la certezza di essere nelle mani di un professionista serio, preparato e con delle grandi competenze oltre che ad un medico empatico e rassicurante, nonostante la situazione complicata della mia malattia.<br>Vorrei aggiungere che anche il reparto di neurochirurgia da lui diretto funziona molto bene, con una elevata attenzione al paziente sia da parte del personale medico, infermieristico e paramedico.<br>Un grazie sincero al dottor Colamaria per quanto ogni giorno fa.<br>Delia Bavaro</blockquote>
-        <button class="rev-more" type="button" hidden>Leggi tutta</button>
+        <button class="rev-more" type="button" style="visibility:hidden">Leggi tutta</button>
         <figcaption><span class="av" aria-hidden="true">D</span><b>Delia Bavaro</b><a href="https://share.google/cAZnsXzcZnndux5iy" target="_blank" rel="noopener">Leggi su Google</a></figcaption>
       </figure>
     </div>
@@ -514,7 +516,7 @@ footer .credit a{color:var(--teal-deep);font-weight:600}
       <h2>Prima della visita</h2>
     </div>
     <div class="faq">
-      <details><summary>Come prenoto una visita?</summary><p>Telefonando o scrivendo su WhatsApp alla segreteria al 379 103 2243, lo stesso numero per Bari (venerdì) e Foggia (giovedì), oppure online su Doctolib, MioDottore o MedicItalia.</p></details>
+      <details><summary>Come prenoto una visita?</summary><p>Telefonando o scrivendo su WhatsApp alla segreteria al 379 103 2243, lo stesso numero per Bari (venerdì) e Foggia (giovedì).</p></details>
       <details><summary>Cosa devo portare?</summary><p>Gli esami già fatti (CD o link delle immagini di risonanza, TAC o radiografie, con i referti), eventuali visite specialistiche precedenti e l'elenco dei farmaci che assumi.</p></details>
       <details><summary>Ho già una proposta di intervento: posso chiedere un secondo parere?</summary><p>Sì. Porta gli esami e la relazione che ti è stata consegnata: li valutiamo insieme e ti spiego le alternative possibili.</p></details>
       <details><summary>Il mal di schiena si opera sempre?</summary><p>No. Nella maggior parte dei casi di patologia degenerativa della colonna si parte da terapie conservative; la chirurgia è indicata solo in situazioni specifiche, valutate caso per caso.</p></details>
@@ -559,7 +561,7 @@ footer .credit a{color:var(--teal-deep);font-weight:600}
 <a class="wa-float" href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." target="_blank" rel="noopener" aria-label="Scrivi alla segreteria su WhatsApp per prenotare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></a>
 <script>
 document.querySelectorAll('.rev').forEach(r=>{const t=r.querySelector('.rev-text'),b=r.querySelector('.rev-more');
-  if(t.scrollHeight>t.clientHeight+4){b.hidden=false;b.onclick=()=>{r.classList.toggle('open');b.textContent=r.classList.contains('open')?'Mostra meno':'Leggi tutta'}}});
+  if(t.scrollHeight>t.clientHeight+1){b.style.visibility='visible';b.onclick=()=>{r.classList.toggle('open');b.textContent=r.classList.contains('open')?'Mostra meno':'Leggi tutta'}}});
 </script>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 
