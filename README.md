@@ -6,7 +6,7 @@ Sito statico (index.html + privacy.html + cookie.html), preparato da ClickBari.
 - Togliere `<meta name="robots" content="noindex...">` da index.html e cancellare il file `_headers`.
 - Completare nella Privacy Policy i dati segnati [da completare]: indirizzo, C.F./P. IVA, email.
 - Aggiungere nel footer l'iscrizione all'Ordine dei Medici (provincia e numero).
-- Verificare con il Dottore: "1.600+ interventi", rating Google, WhatsApp attivo sul 379 103 2243.
+- Confermati: 1.600+ interventi (dal vecchio sito), WhatsApp della segreteria sul 379 103 2243, Google 4,5 / 17 recensioni (31.10.2026).
 - Inviare sitemap.xml a Google Search Console.
 
 ## Da fare
