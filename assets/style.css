@@ -229,3 +229,20 @@ footer .credit a{color:var(--teal);font-weight:700}
   .wa-float{right:12px;bottom:12px;width:56px;height:56px}
   header .wrap{height:64px}
 }
+
+/* pulsanti: contorno luminoso + respiro lento sui principali */
+@keyframes respiro-blu{0%,100%{box-shadow:0 0 0 1px rgba(143,166,255,.55),0 0 14px rgba(143,166,255,.28)}50%{box-shadow:0 0 0 4px rgba(143,166,255,.22),0 0 30px rgba(143,166,255,.55)}}
+@keyframes respiro-blu-notte{0%,100%{box-shadow:0 0 0 1px rgba(10,17,40,.35),0 0 12px rgba(255,122,192,.25)}50%{box-shadow:0 0 0 4px rgba(255,122,192,.28),0 0 28px rgba(255,122,192,.45)}}
+@keyframes respiro-verde{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 8px 20px rgba(0,0,0,.35)}50%{box-shadow:0 0 0 12px rgba(37,211,102,0),0 8px 20px rgba(0,0,0,.35)}}
+.btn{transition:background .2s,transform .2s,border-color .2s,color .2s,box-shadow .3s}
+.btn-primary{box-shadow:0 0 0 1px rgba(143,166,255,.55),0 0 14px rgba(143,166,255,.28)}
+.hero-actions .btn-primary,.callbar .btn-primary,.cta .btn-primary,.loc .btn-primary{animation:respiro-blu 3.2s ease-in-out infinite}
+.cta .btn-primary{animation-name:respiro-blu-notte}
+.btn-primary:hover{animation-play-state:paused}
+.btn-ghost{border-color:rgba(143,166,255,.5);box-shadow:0 0 12px rgba(143,166,255,.16),inset 0 0 10px rgba(143,166,255,.08)}
+.btn-ghost:hover{border-color:var(--teal);box-shadow:0 0 18px rgba(143,166,255,.35),inset 0 0 12px rgba(143,166,255,.12)}
+nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22)}
+.btn-wa{box-shadow:0 0 0 1px rgba(37,211,102,.6),0 0 16px rgba(37,211,102,.3)}
+.wa-float{animation:respiro-verde 2.8s ease-out infinite}
+.online a.plat{box-shadow:0 0 12px rgba(255,255,255,.12)}
+.online a.plat:hover{box-shadow:0 0 18px rgba(255,255,255,.28)}
