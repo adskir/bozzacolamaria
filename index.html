@@ -89,7 +89,8 @@
 <header>
   <div class="wrap">
     <a href="/" class="brand"><strong>Dott. Antonio Colamaria</strong><span>Neurochirurgo · Bari e Foggia</span></a>
-    <nav aria-label="Menu principale">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu"><svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <nav id="menu" aria-label="Menu principale">
       <a href="/#patologie">Patologie</a>
       <a href="curriculum.html">Curriculum</a>
       <a href="pubblicazioni.html">Pubblicazioni</a>
@@ -105,16 +106,12 @@
 <section class="hero">
   <div class="wrap">
     <div>
+      <p class="hero-badge"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg></i><span><b>Direttore della Neurochirurgia</b> · Policlinico Riuniti di Foggia</span></p>
       <h1>Cervello, colonna vertebrale e <em>nervi periferici</em>.</h1>
       <p class="lede">Visite neurochirurgiche a Bari e Foggia: una lettura chiara degli esami e delle opzioni di cura, conservative quando è possibile, chirurgiche quando servono.</p>
       <div class="hero-actions">
         <a href="tel:+393791032243" class="btn btn-primary">Chiama per prenotare</a>
         <a href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." class="btn btn-ghost social" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>Scrivi alla segreteria</a>
-      </div>
-      <div class="hero-meta">
-        <b>★ 4,5</b><span>17 recensioni su Google</span>
-        <span class="dot" aria-hidden="true"></span>
-        <span>Direttore della Neurochirurgia, Policlinico Riuniti di Foggia</span>
       </div>
     </div>
     <figure class="portrait">
@@ -336,7 +333,7 @@
 document.querySelectorAll('.rev').forEach(r=>{const t=r.querySelector('.rev-text'),b=r.querySelector('.rev-more');
   if(t.scrollHeight>t.clientHeight+1){b.style.visibility='visible';b.onclick=()=>{r.classList.toggle('open');b.textContent=r.classList.contains('open')?'Mostra meno':'Leggi tutta'}}});
 </script>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="assets/site.js"></script>
 
 </body>
 </html>
