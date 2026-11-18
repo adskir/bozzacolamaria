@@ -22,6 +22,20 @@
     window.addEventListener('resize', function () { if (window.innerWidth > 860) close(); });
   }
 
+
+  // Mobile: "Patologie" apre e chiude il sottomenu invece di portare alla home
+  var dd = document.querySelector('nav .dd');
+  if (dd) {
+    var top = dd.querySelector('.dd-top');
+    top.setAttribute('aria-expanded', 'false');
+    top.addEventListener('click', function (e) {
+      if (window.innerWidth > 860) return;
+      e.preventDefault(); e.stopPropagation();
+      var o = dd.classList.toggle('open');
+      top.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+  }
+
   // In home: il pulsante "Prenota" della testata, la barra di chiamata e WhatsApp
   // compaiono solo quando i pulsanti del primo schermo non sono più visibili.
   var hero = document.querySelector('.hero-actions');

@@ -413,3 +413,11 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
   .js nav.open{max-height:calc(100vh - 76px);overflow-y:auto}
   .js nav .dd .sub a:not(.btn){padding:11px 0 11px 18px;font-size:15.5px;color:#B9C3DD}
 }
+/* mobile: sottomenu Patologie a scomparsa */
+@media(max-width:860px){
+  .js nav .dd-top{display:flex !important;justify-content:space-between;align-items:center}
+  .js nav .dd-top::after{content:"";width:9px;height:9px;margin-right:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-3px) rotate(45deg);transition:transform .2s}
+  .js nav .dd.open .dd-top::after{transform:translateY(2px) rotate(-135deg)}
+  .js nav .dd .sub{display:none}
+  .js nav .dd.open .sub{display:block}
+}
