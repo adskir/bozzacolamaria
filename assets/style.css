@@ -396,3 +396,20 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .area.txt .body{padding-top:26px}
 .feat .body{padding-top:26px}
 .feat{border-top:4px solid var(--teal)}
+
+/* sottomenu Patologie */
+.dd{position:relative}
+.dd .sub a{display:block;white-space:nowrap}
+@media(min-width:861px){
+  .dd-top::after{content:"";display:inline-block;width:6px;height:6px;margin-left:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-3px) rotate(45deg)}
+  .dd .sub{display:none;position:absolute;top:100%;left:-14px;padding-top:14px;z-index:60}
+  .dd .sub::before{content:"";position:absolute;inset:14px 0 0;background:#0E1733;border:1px solid var(--line-2);border-radius:14px;box-shadow:0 20px 40px rgba(0,0,0,.4);z-index:-1}
+  .dd:hover .sub,.dd:focus-within .sub{display:block}
+  .dd .sub a{padding:10px 18px;font-size:14.5px}
+  .dd .sub a:first-child{margin-top:8px}.dd .sub a:last-child{margin-bottom:8px}
+  .dd .sub a:hover{color:#fff;background:rgba(91,157,255,.12)}
+}
+@media(max-width:860px){
+  .js nav.open{max-height:calc(100vh - 76px);overflow-y:auto}
+  .js nav .dd .sub a:not(.btn){padding:11px 0 11px 18px;font-size:15.5px;color:#B9C3DD}
+}
