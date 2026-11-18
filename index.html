@@ -92,10 +92,10 @@
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu"><svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     <nav id="menu" aria-label="Menu principale">
       <a href="/#patologie">Patologie</a>
+      <a href="tecnologie.html">Tecnologie</a>
+      <a href="pubblicazioni.html">Ricerca</a>
       <a href="curriculum.html">Curriculum</a>
-      <a href="pubblicazioni.html">Pubblicazioni</a>
       <a href="/#sedi">Sedi e orari</a>
-      <a href="/#faq">Domande</a>
       <a href="tel:+393791032243" class="btn btn-primary btn-sm">Prenota: 379 103 2243</a>
     </nav>
   </div>
@@ -110,8 +110,8 @@
       <h1>Cervello, colonna vertebrale e <em>nervi periferici</em>.</h1>
       <p class="lede">Visite neurochirurgiche a Bari e Foggia: una lettura chiara degli esami e delle opzioni di cura, conservative quando è possibile, chirurgiche quando servono.</p>
       <div class="hero-actions">
-        <a href="tel:+393791032243" class="btn btn-primary">Chiama per prenotare</a>
-        <a href="https://wa.me/393791032243?text=Buongiorno%2C%20vorrei%20prenotare%20una%20visita%20con%20il%20Dott.%20Colamaria." class="btn btn-ghost social" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>Scrivi alla segreteria</a>
+        <a href="#patologie" class="btn btn-primary">Patologie trattate</a>
+        <a href="#sedi" class="btn btn-ghost">Sedi e prenotazioni</a>
       </div>
     </div>
     <figure class="portrait">
@@ -120,47 +120,60 @@
   </div>
 </section>
 
-<section id="patologie">
+<section id="patologie" class="light">
   <div class="wrap">
     <div class="head">
-      <div class="kicker">Aree di competenza</div>
+      <div class="kicker">Aree cliniche</div>
       <h2>Di cosa mi occupo</h2>
-      <p>Le patologie trattate seguono il percorso del sistema nervoso: dall'encefalo, lungo la colonna vertebrale, fino ai nervi degli arti.</p>
+      <p>Le patologie trattate seguono il percorso del sistema nervoso: dall’encefalo, lungo la colonna vertebrale, fino ai nervi degli arti.</p>
     </div>
-    <div class="zones">
-      <article class="zone">
-        <div class="zone-img"><img src="img/patologie-cervello.webp" alt="Risonanza magnetica dell'encefalo" width="584" height="540" loading="lazy" decoding="async"></div>
-        <div class="zone-body">
-          <span class="zone-tag">01</span>
-          <h3>Patologie cerebrali</h3>
-          <div class="cond"><h4>Tumori cerebrali</h4><p>Benigni e maligni, valutati in base al tipo e alla sede.</p></div>
-          <div class="cond"><h4>Patologie cerebrovascolari</h4><p>Aneurismi, malformazioni artero-venose (MAV), cavernomi e ischemia cerebrale cronica.</p></div>
-          <div class="cond"><h4>Trauma cranico</h4><p>Lieve, moderato o grave: in alcuni casi serve l'intervento chirurgico.</p></div>
-        </div>
-      </article>
-      <article class="zone">
-        <div class="zone-img"><img src="img/patologie-colonna.webp" alt="Radiografia della colonna vertebrale" width="584" height="540" loading="lazy" decoding="async"></div>
-        <div class="zone-body">
-          <span class="zone-tag">02</span>
-          <h3>Patologie vertebrali</h3>
-          <div class="cond"><h4>Patologia degenerativa</h4><p>Ernie del disco, stenosi del canale e artrosi vertebrale: la causa più frequente di mal di schiena e dolore alle gambe.</p></div>
-          <div class="cond"><h4>Trauma spinale</h4><p>Fratture e lesioni vertebrali che possono richiedere un intervento tempestivo, anche con tecniche mini-invasive.</p></div>
-        </div>
-      </article>
-      <article class="zone">
-        <div class="zone-img"><img src="img/patologie-nervi.webp" alt="Nervi periferici della mano" width="584" height="540" loading="lazy" decoding="async"></div>
-        <div class="zone-body">
-          <span class="zone-tag">03</span>
-          <h3>Sistema nervoso periferico</h3>
-          <div class="cond"><h4>Lesioni traumatiche dei nervi</h4><p>Riparazione chirurgica dei nervi danneggiati che innervano braccia e gambe.</p></div>
-          <div class="cond"><h4>Tumori dei nervi periferici</h4><p>Valutazione e, quando serve, asportazione chirurgica.</p></div>
-        </div>
-      </article>
+    <div class="areas">
+      <a class="area" href="neuro-oncologia.html">
+        <div class="pic"><img src="img/patologie-cervello.webp" alt="Risonanza magnetica dell’encefalo" width="584" height="365" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Tumori del cervello</h3><p>Gliomi, meningiomi, metastasi e tumori della base cranica, con neuronavigazione e monitoraggio.</p><span class="go">Approfondisci →</span></div>
+      </a>
+      <a class="area" href="colonna-vertebrale.html">
+        <div class="pic"><img src="img/patologie-colonna.webp" alt="Radiografia della colonna vertebrale" width="584" height="365" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Colonna vertebrale</h3><p>Ernia del disco, stenosi, mielopatia cervicale, fratture e tumori della colonna.</p><span class="go">Approfondisci →</span></div>
+      </a>
+      <a class="area" href="patologie-vascolari.html">
+        <div class="pic art"><img src="img/grafica/cervello.svg" alt="Illustrazione del cervello a punti luminosi" width="584" height="365" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Aneurismi e patologie vascolari</h3><p>Aneurismi cerebrali, malformazioni, emorragie ed ematoma subdurale cronico.</p><span class="go">Approfondisci →</span></div>
+      </a>
+      <a class="area" href="nervi-periferici.html">
+        <div class="pic"><img src="img/patologie-nervi.webp" alt="Nervi periferici della mano" width="584" height="365" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Nervi periferici</h3><p>Lesioni traumatiche e tumori dei nervi di braccia e gambe.</p><span class="go">Approfondisci →</span></div>
+      </a>
+      <a class="area" href="chirurgia-endoscopica-colonna.html">
+        <div class="pic art"><img src="img/grafica/colonna.svg" alt="Illustrazione della colonna vertebrale a punti luminosi" width="584" height="365" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Chirurgia endoscopica</h3><p>Ernie del disco operate con un’incisione di un centimetro, quando l’indicazione lo permette.</p><span class="go">Approfondisci →</span></div>
+      </a>
+      <a class="area" href="tecnologie.html">
+        <div class="pic art"><img src="img/grafica/microscopio.svg" alt="Illustrazione di un campo visivo al microscopio" width="584" height="365" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Tecnologie in sala operatoria</h3><p>Neuronavigazione, microscopio robotizzato, endoscopia, fluorescenza e laser.</p><span class="go">Approfondisci →</span></div>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="when">
+<section class="spine-band">
+  <div class="wrap band">
+    <div class="art"><img src="img/grafica/colonna.svg" alt="Illustrazione della colonna vertebrale a punti luminosi" width="360" height="900" loading="lazy"></div>
+    <div>
+      <div class="kicker">Colonna vertebrale</div>
+      <h2>Mal di schiena, ernia, stenosi: prima si cura, poi, se serve, si opera</h2>
+      <p class="lede" style="color:var(--ink-soft);font-size:17px;max-width:40em">La maggior parte dei problemi della colonna migliora senza intervento. Quando la chirurgia serve, si preferiscono, dove possibile, tecniche mini-invasive ed endoscopiche.</p>
+      <ul class="links-list">
+        <li><a href="ernia-del-disco.html">Ernia del disco lombare e cervicale <span>→</span></a></li>
+        <li><a href="stenosi-del-canale.html">Stenosi del canale vertebrale <span>→</span></a></li>
+        <li><a href="chirurgia-endoscopica-colonna.html">Chirurgia endoscopica della colonna <span>→</span></a></li>
+        <li><a href="colonna-vertebrale.html">Tutta la chirurgia della colonna <span>→</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="when light" style="padding-top:84px">
   <div class="wrap"><div class="inner">
     <div class="head center">
       <div class="kicker">Quando rivolgersi al neurochirurgo</div>
@@ -187,7 +200,7 @@
       <p>In visita guardo gli esami insieme al paziente e spiego con parole semplici cosa mostrano e quali sono le opzioni. Se serve un intervento, spiego come si svolge, quali sono i rischi e cosa aspettarsi dopo.</p>
       <div class="links-row">
         <a href="curriculum.html" class="btn btn-primary btn-sm">Curriculum completo</a>
-        <a href="pubblicazioni.html" class="btn btn-ghost btn-sm">Pubblicazioni</a>
+        <a href="pubblicazioni.html" class="btn btn-ghost btn-sm">Ricerca e pubblicazioni</a>
         <a href="https://www.linkedin.com/in/antonio-colamaria-a13306196/" class="btn btn-ghost btn-sm social icon-only" target="_blank" rel="noopener me" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg></a>
         <a href="https://www.facebook.com/AntonioColamariaNeurochirurgo" class="btn btn-ghost btn-sm social icon-only" target="_blank" rel="noopener me" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.45A20 20 0 0 0 14.3 4.3c-2.25 0-3.8 1.37-3.8 3.9v2.3H8v3h2.5V21h3Z"/></svg></a>
       </div>
@@ -195,9 +208,34 @@
     <div class="about-stats">
       <div class="stat"><b>3.000+</b><span>interventi come primo operatore</span></div>
       <div class="stat"><b>5.600+</b><span>interventi chirurgici in totale</span></div>
-      <div class="stat"><b>~100</b><span>pubblicazioni scientifiche, 13 su PubMed</span></div>
+      <div class="stat"><b>53</b><span>articoli su riviste scientifiche, dal 1997 al 2026</span></div>
       <div class="stat"><b>60 + 40</b><span>congressi e corsi di aggiornamento in Italia e all&#39;estero</span></div>
     </div>
+  </div>
+</section>
+
+<section class="light" id="ricerca">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Ricerca</div>
+      <h2>Dalla sala operatoria alla ricerca</h2>
+      <p>Con l’Università di Foggia il Dott. Colamaria coordina il centro italiano di una rete di ricerca internazionale su neuro-oncologia, intelligenza artificiale e chirurgia mini-invasiva.</p>
+    </div>
+    <div class="featured">
+      <a class="feat" href="pubblicazioni.html#p2026-mgmt" style="text-decoration:none;color:inherit">
+        <div class="pic"><img src="img/grafica/cervello.svg" alt="" width="300" height="240" loading="lazy"></div>
+        <div class="body"><div class="meta">2026 · Neurosurgical Review</div><h3>Intelligenza artificiale e risonanza per prevedere MGMT nel glioblastoma</h3><span class="go" style="font-weight:700;color:var(--teal-deep);font-size:14px">Leggi la sintesi →</span></div>
+      </a>
+      <a class="feat" href="pubblicazioni.html#p2025-transpeduncolare" style="text-decoration:none;color:inherit">
+        <div class="pic"><img src="img/grafica/colonna.svg" alt="" width="300" height="240" loading="lazy"></div>
+        <div class="body"><div class="meta">2025 · Neurosurgical Focus</div><h3>Metastasi vertebrali: lo studio multicentrico sull’accesso transpeduncolare</h3><span class="go" style="font-weight:700;color:var(--teal-deep);font-size:14px">Leggi la sintesi →</span></div>
+      </a>
+      <a class="feat" href="pubblicazioni.html#p2025-confocale" style="text-decoration:none;color:inherit">
+        <div class="pic"><img src="img/grafica/microscopio.svg" alt="" width="300" height="240" loading="lazy"></div>
+        <div class="body"><div class="meta">2025 · Diagnostics</div><h3>Endomicroscopia laser confocale: vedere le cellule durante l’intervento</h3><span class="go" style="font-weight:700;color:var(--teal-deep);font-size:14px">Leggi la sintesi →</span></div>
+      </a>
+    </div>
+    <p style="margin-top:22px"><a href="pubblicazioni.html" class="btn btn-ghost btn-sm">Tutte le 53 pubblicazioni</a></p>
   </div>
 </section>
 
@@ -241,7 +279,7 @@
   </div></div>
 </section>
 
-<section class="reviews" id="recensioni">
+<section class="reviews light" id="recensioni" style="padding-top:84px">
   <div class="wrap">
     <div class="kicker">Recensioni</div>
     <h2 class="rev-h">Cosa dicono i pazienti</h2>
@@ -279,7 +317,7 @@
   </div>
 </section>
 
-<section id="faq" style="padding-top:0">
+<section id="faq" class="light" style="padding-top:0">
   <div class="wrap">
     <div class="head center">
       <div class="kicker">Domande frequenti</div>
