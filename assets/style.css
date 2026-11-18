@@ -249,7 +249,7 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 
 /* ===== Ritmo chiaro/scuro e componenti delle pagine interne (18.11.2026) ===== */
 .light{
-  --paper:#F5F2EA; --white:#FFFFFF; --paper-2:#ECE7DC; --line:#E0DACC; --line-2:#CFC7B5;
+  --paper:#F1EADA; --white:#FAF6EC; --paper-2:#E7DEC9; --line:#DCD1BA; --line-2:#C9BC9F;
   --ink:#0A1128; --ink-soft:#3B4566; --ink-mute:#566080;
   --teal:#1E5BD6; --teal-deep:#1748AE; --amber:#B0156E; --mint:#0F766E;
   background:var(--paper); color:var(--ink)
@@ -257,7 +257,7 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .light .btn-primary{background:#0A1128;color:#fff;box-shadow:none;animation:none}
 .light .btn-primary:hover{background:#1E3A8A}
 .light .btn-ghost{color:#0A1128;border-color:var(--line-2);box-shadow:none}
-.light .btn-ghost:hover{background:#fff;border-color:#0A1128}
+.light .btn-ghost:hover{background:var(--white);border-color:#0A1128}
 .light .rev-text{color:#25304F}
 .light .rev-score b,.light .hero-meta b{color:#0A1128}
 .light .about-stats .stat:nth-child(4){border-color:#0A1128}
@@ -387,3 +387,12 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .light .av{background:var(--paper-2);color:#0A1128}
 .light details summary::after{color:var(--teal-deep)}
 @media(max-width:900px){.p-hero .art{display:flex;justify-content:center}.p-hero .art img{max-height:200px;width:auto}}
+
+/* 18.11 sera: niente grafica a punti, avorio più visibile */
+.p-hero .wrap:not(:has(.art)){grid-template-columns:1fr}
+.p-hero .wrap:not(:has(.art)) .lede{max-width:44em}
+.band:not(:has(.art)){grid-template-columns:1fr;max-width:860px}
+.area.txt{border-top:4px solid var(--teal)}
+.area.txt .body{padding-top:26px}
+.feat .body{padding-top:26px}
+.feat{border-top:4px solid var(--teal)}
