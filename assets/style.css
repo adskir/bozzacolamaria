@@ -477,3 +477,7 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .cc-b.cc-yes{background:#5B9DFF;border-color:#5B9DFF;color:#0A1128}
 .cc-b:hover{border-color:#93BFFF}
 @media(max-width:860px){.cc{bottom:84px}}
+
+.facts{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}
+.facts li{padding-left:0}
+.facts b{display:inline-block;min-width:52px;color:var(--teal);font-size:20px}
