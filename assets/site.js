@@ -36,6 +36,19 @@
     });
   }
 
+
+  // Video: il player YouTube (youtube-nocookie) si carica solo quando il visitatore clicca
+  document.querySelectorAll('.vid[data-yt] .vid-poster').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var box = btn.parentNode, id = box.getAttribute('data-yt');
+      var wrap = document.createElement('div'); wrap.className = 'vid-frame';
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+      f.title = 'Video'; f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
+      wrap.appendChild(f); box.replaceChild(wrap, btn);
+    });
+  });
+
   // In home: il pulsante "Prenota" della testata, la barra di chiamata e WhatsApp
   // compaiono solo quando i pulsanti del primo schermo non sono più visibili.
   var hero = document.querySelector('.hero-actions');
