@@ -434,3 +434,8 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 /* titoli delle pubblicazioni cliccabili */
 .pub h3 a{color:inherit;text-decoration:none}
 .pub h3 a:hover{color:var(--teal);text-decoration:underline;text-underline-offset:3px}
+
+/* foto nel testo */
+.prose .photo{margin:22px 0 30px}
+.prose .photo img{width:100%;max-width:640px;height:auto;border-radius:var(--r-lg);display:block}
+.prose .photo figcaption{margin-top:8px;font-size:14px;color:var(--ink-mute)}
