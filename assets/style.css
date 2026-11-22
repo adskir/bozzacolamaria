@@ -431,3 +431,6 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .story figcaption b{color:#fff;font-size:16px}
 .story figcaption span{color:#9FB0D6;font-size:14px}
 @media(max-width:700px){.story{padding:30px 24px 26px}.story-mark{font-size:72px;height:34px}}
+/* titoli delle pubblicazioni cliccabili */
+.pub h3 a{color:inherit;text-decoration:none}
+.pub h3 a:hover{color:var(--teal);text-decoration:underline;text-underline-offset:3px}
