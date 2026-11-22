@@ -439,3 +439,9 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .prose .photo{margin:22px 0 30px}
 .prose .photo img{width:100%;max-width:640px;height:auto;border-radius:var(--r-lg);display:block}
 .prose .photo figcaption{margin-top:8px;font-size:14px;color:var(--ink-mute)}
+
+/* illustrazioni anatomiche (atlanti storici, pubblico dominio) */
+.p-hero .art.tall{justify-self:center;max-width:none}
+.p-hero .art.tall img{width:auto;max-height:520px;margin:0 auto;display:block}
+.spine-band .band .art img{max-height:560px}
+@media(max-width:900px){.p-hero .art.tall img{max-height:240px}}
