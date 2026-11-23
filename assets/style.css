@@ -498,3 +498,5 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .hero .portrait.cut img{height:auto;object-fit:contain}
 @media(max-width:900px){.hero .portrait.cut{aspect-ratio:auto;max-width:440px;margin:0 auto}}
 @media(min-width:901px){.hero::before{right:max(0px,calc(50vw - 760px));width:min(980px,62vw);top:52%;opacity:.8}}
+/* barra "Chiama" su mobile: l'ombra segue gli angoli arrotondati del pulsante */
+.callbar{border-radius:var(--r-md);background:transparent}
