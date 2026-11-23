@@ -55,7 +55,9 @@
   if (hero && 'IntersectionObserver' in window) {
     doc.classList.add('has-hero');
     new IntersectionObserver(function (entries) {
-      doc.classList.toggle('past-hero', !entries[0].isIntersecting);
+      var e = entries[0];
+      // "passato" solo se i pulsanti dell'hero sono usciti dall'alto, non se sono ancora sotto
+      doc.classList.toggle('past-hero', !e.isIntersecting && e.boundingClientRect.top < 0);
     }).observe(hero);
   }
 
