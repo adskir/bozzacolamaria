@@ -10,7 +10,7 @@
 :root{
   --paper:#0A1128; --white:#131C3D; --paper-2:#1B2650; --line:#222D57; --line-2:#2A3766;
   --ink:#FFFFFF; --ink-soft:#C2CAE3; --ink-mute:#AEB8D6;
-  --teal:#5B9DFF; --teal-deep:#93BFFF; --teal-light:#1B2650; --amber:#FF7AC0; --mint:#7FE3D2; --gold:#FFC861;
+  --teal:#E8BF8E; --teal-deep:#F3D5AE; --teal-light:#1B2650; --amber:#FF7AC0; --mint:#7FE3D2; --gold:#FFC861;
   --r-xl:28px; --r-lg:22px; --r-md:14px; --r-sm:8px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -231,16 +231,16 @@ footer .credit a{color:var(--teal);font-weight:700}
 }
 
 /* pulsanti: contorno luminoso + respiro lento sui principali */
-@keyframes respiro-blu{0%,100%{box-shadow:0 0 0 1px rgba(91,157,255,.55),0 0 14px rgba(91,157,255,.28)}50%{box-shadow:0 0 0 4px rgba(91,157,255,.22),0 0 30px rgba(91,157,255,.55)}}
+@keyframes respiro-blu{0%,100%{box-shadow:0 0 0 1px rgba(232,191,142,.55),0 0 14px rgba(232,191,142,.28)}50%{box-shadow:0 0 0 4px rgba(232,191,142,.22),0 0 30px rgba(232,191,142,.55)}}
 @keyframes respiro-blu-notte{0%,100%{box-shadow:0 0 0 1px rgba(10,17,40,.35),0 0 12px rgba(255,122,192,.25)}50%{box-shadow:0 0 0 4px rgba(255,122,192,.28),0 0 28px rgba(255,122,192,.45)}}
 @keyframes respiro-verde{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 8px 20px rgba(0,0,0,.35)}50%{box-shadow:0 0 0 12px rgba(37,211,102,0),0 8px 20px rgba(0,0,0,.35)}}
 .btn{transition:background .2s,transform .2s,border-color .2s,color .2s,box-shadow .3s}
-.btn-primary{box-shadow:0 0 0 1px rgba(91,157,255,.55),0 0 14px rgba(91,157,255,.28)}
+.btn-primary{box-shadow:0 0 0 1px rgba(232,191,142,.55),0 0 14px rgba(232,191,142,.28)}
 .hero-actions .btn-primary,.callbar .btn-primary,.cta .btn-primary,.loc .btn-primary{animation:respiro-blu 3.2s ease-in-out infinite}
 .cta .btn-primary{animation-name:respiro-blu-notte}
 .btn-primary:hover{animation-play-state:paused}
-.btn-ghost{border-color:rgba(91,157,255,.5);box-shadow:0 0 12px rgba(91,157,255,.16),inset 0 0 10px rgba(91,157,255,.08)}
-.btn-ghost:hover{border-color:var(--teal);box-shadow:0 0 18px rgba(91,157,255,.35),inset 0 0 12px rgba(91,157,255,.12)}
+.btn-ghost{border-color:rgba(232,191,142,.5);box-shadow:0 0 12px rgba(232,191,142,.16),inset 0 0 10px rgba(232,191,142,.08)}
+.btn-ghost:hover{border-color:var(--teal);box-shadow:0 0 18px rgba(232,191,142,.35),inset 0 0 12px rgba(232,191,142,.12)}
 nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22)}
 .btn-wa{box-shadow:0 0 0 1px rgba(37,211,102,.6),0 0 16px rgba(37,211,102,.3)}
 .wa-float{animation:respiro-verde 2.8s ease-out infinite}
@@ -251,7 +251,7 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .light{
   --paper:#F1EADA; --white:#FAF6EC; --paper-2:#E7DEC9; --line:#DCD1BA; --line-2:#C9BC9F;
   --ink:#0A1128; --ink-soft:#3B4566; --ink-mute:#566080;
-  --teal:#1E5BD6; --teal-deep:#1748AE; --amber:#B0156E; --mint:#0F766E;
+  --teal:#8A5A22; --teal-deep:#6E4517; --amber:#B0156E; --mint:#0F766E;
   background:var(--paper); color:var(--ink)
 }
 .light .btn-primary{background:#0A1128;color:#fff;box-shadow:none;animation:none}
@@ -407,7 +407,7 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
   .dd:hover .sub,.dd:focus-within .sub{display:block}
   .dd .sub a{padding:10px 18px;font-size:14.5px}
   .dd .sub a:first-child{margin-top:8px}.dd .sub a:last-child{margin-bottom:8px}
-  .dd .sub a:hover{color:#fff;background:rgba(91,157,255,.12)}
+  .dd .sub a:hover{color:#fff;background:rgba(232,191,142,.12)}
 }
 @media(max-width:860px){
   .js nav.open{max-height:calc(100vh - 76px);overflow-y:auto}
@@ -424,12 +424,12 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 
 /* storia di un paziente (in evidenza sopra le recensioni Google) */
 .story{position:relative;max-width:860px;margin:0 auto 28px;padding:40px 44px 34px;background:#0A1128;border-radius:var(--r-lg);text-align:left;overflow:hidden;box-shadow:0 18px 40px rgba(10,17,40,.18)}
-.story::after{content:"";position:absolute;inset:auto -80px -120px auto;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(91,157,255,.28),transparent 70%)}
-.story-mark{font:800 96px/0.8 'Manrope',sans-serif;color:#5B9DFF;height:44px}
+.story::after{content:"";position:absolute;inset:auto -80px -120px auto;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(232,191,142,.28),transparent 70%)}
+.story-mark{font:800 96px/0.8 'Manrope',sans-serif;color:#E8BF8E;height:44px}
 .story blockquote{margin:0;font-size:clamp(20px,2.3vw,26px);line-height:1.45;font-weight:600;color:#fff;letter-spacing:-.01em;position:relative;z-index:1}
 .story figcaption{margin-top:20px;display:flex;flex-direction:column;gap:2px;position:relative;z-index:1}
 .story figcaption b{color:#fff;font-size:16px}
-.story figcaption span{color:#9FB0D6;font-size:14px}
+.story figcaption span{color:#B8BFD3;font-size:14px}
 @media(max-width:700px){.story{padding:30px 24px 26px}.story-mark{font-size:72px;height:34px}}
 /* titoli delle pubblicazioni cliccabili */
 .pub h3 a{color:inherit;text-decoration:none}
@@ -451,8 +451,8 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .vid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
 .vid{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
 .vid-poster{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;cursor:pointer;background:radial-gradient(120% 90% at 30% 20%,#1d3a6e 0%,#0A1128 70%);}
-.vid-poster::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(91,157,255,.05) 0 1px,transparent 1px 36px)}
-.vid-play{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:#5B9DFF;box-shadow:0 0 0 10px rgba(91,157,255,.18),0 10px 30px rgba(0,0,0,.4);transition:transform .2s;z-index:1}
+.vid-poster::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(232,191,142,.05) 0 1px,transparent 1px 36px)}
+.vid-play{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:#E8BF8E;box-shadow:0 0 0 10px rgba(232,191,142,.18),0 10px 30px rgba(0,0,0,.4);transition:transform .2s;z-index:1}
 .vid-play::before{content:"";position:absolute;left:29px;top:22px;border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent #0A1128}
 .vid-poster:hover .vid-play,.vid-poster:focus-visible .vid-play{transform:scale(1.08)}
 .vid-meta{display:flex;flex-direction:column;gap:8px;padding:18px 20px 20px}
@@ -464,20 +464,37 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 .vid-note{font-size:13px;color:var(--ink-mute);margin:10px 0 0}
 /* banner consenso cookie */
 .cc-open{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
-.cc{position:fixed;left:16px;right:16px;bottom:16px;z-index:1000;max-width:620px;margin:0 auto;background:#0E1733;color:#E6ECFA;border:1px solid rgba(91,157,255,.35);border-radius:18px;padding:20px 22px 18px;box-shadow:0 20px 50px rgba(0,0,0,.45);font-size:15px;line-height:1.5}
-.cc a{color:#93BFFF}
+.cc{position:fixed;left:16px;right:16px;bottom:16px;z-index:1000;max-width:620px;margin:0 auto;background:#0E1733;color:#E6ECFA;border:1px solid rgba(232,191,142,.35);border-radius:18px;padding:20px 22px 18px;box-shadow:0 20px 50px rgba(0,0,0,.45);font-size:15px;line-height:1.5}
+.cc a{color:#F3D5AE}
 .cc-t{margin:0 26px 14px 0}
-.cc-x{position:absolute;top:8px;right:10px;background:none;border:0;color:#9FB0D6;font-size:26px;line-height:1;cursor:pointer;padding:4px 8px}
+.cc-x{position:absolute;top:8px;right:10px;background:none;border:0;color:#B8BFD3;font-size:26px;line-height:1;cursor:pointer;padding:4px 8px}
 .cc-detail{margin:0 0 14px}
 .cc-row{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid rgba(255,255,255,.08);cursor:pointer}
-.cc-row input{margin-top:4px;width:18px;height:18px;accent-color:#5B9DFF;flex:none}
-.cc-tech{font-size:13px;color:#9FB0D6;margin:8px 0 0}
+.cc-row input{margin-top:4px;width:18px;height:18px;accent-color:#E8BF8E;flex:none}
+.cc-tech{font-size:13px;color:#B8BFD3;margin:8px 0 0}
 .cc-btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
-.cc-b{flex:1 1 auto;min-width:110px;padding:11px 16px;border-radius:12px;border:1px solid rgba(91,157,255,.5);background:transparent;color:#fff;font:600 15px/1 'Manrope',sans-serif;cursor:pointer}
-.cc-b.cc-yes{background:#5B9DFF;border-color:#5B9DFF;color:#0A1128}
-.cc-b:hover{border-color:#93BFFF}
+.cc-b{flex:1 1 auto;min-width:110px;padding:11px 16px;border-radius:12px;border:1px solid rgba(232,191,142,.5);background:transparent;color:#fff;font:600 15px/1 'Manrope',sans-serif;cursor:pointer}
+.cc-b.cc-yes{background:#E8BF8E;border-color:#E8BF8E;color:#0A1128}
+.cc-b:hover{border-color:#F3D5AE}
 @media(max-width:860px){.cc{bottom:84px}}
 
 .facts{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}
 .facts li{padding-left:0}
 .facts b{display:inline-block;min-width:52px;color:var(--teal);font-size:20px}
+
+/* hero con cervello anatomico e ritratto scontornato (proposta Antonio 23.11) */
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-6%;top:50%;width:min(1200px,92vw);aspect-ratio:1400/1023;transform:translateY(-50%);background:url(../img/anatomia/cervello-hero.webp) center/contain no-repeat;opacity:.75;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0A1128 0%,rgba(10,17,40,.88) 32%,rgba(10,17,40,.25) 62%,rgba(10,17,40,0) 80%),linear-gradient(0deg,#0A1128 0%,rgba(10,17,40,0) 22%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero .portrait.cut{background:none;border:0;box-shadow:none;border-radius:0;overflow:visible}
+.hero .portrait.cut img{border-radius:0;box-shadow:none;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+.hero .portrait.cut::before,.hero .portrait.cut::after{display:none}
+@media(max-width:900px){
+  .hero::before{right:-30%;top:22%;width:150vw;opacity:.45}
+  .hero::after{background:linear-gradient(0deg,#0A1128 0%,rgba(10,17,40,.65) 45%,rgba(10,17,40,.3) 100%)}
+}
+.hero .portrait.cut{aspect-ratio:auto;align-self:end}
+.hero .portrait.cut img{height:auto;object-fit:contain}
+@media(max-width:900px){.hero .portrait.cut{aspect-ratio:auto;max-width:440px;margin:0 auto}}
+@media(min-width:901px){.hero::before{right:max(0px,calc(50vw - 760px));width:min(980px,62vw);top:52%;opacity:.8}}
