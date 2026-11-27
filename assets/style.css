@@ -500,8 +500,8 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
 @media(min-width:901px){.hero::before{right:max(0px,calc(50vw - 760px));width:min(980px,62vw);top:52%;opacity:.8}}
 /* barra "Chiama" su mobile: l'ombra segue gli angoli arrotondati del pulsante */
 .callbar{border-radius:var(--r-md);background:transparent}
-/* mobile: foto normale come prima, senza cervello dietro (desktop invariato) */
+/* mobile: come desktop — ritratto scontornato con cervello dietro, sotto al testo */
 @media(max-width:900px){
-  .hero::before,.hero::after{display:none}
-  .hero .portrait.cut img{border-radius:var(--r-lg);box-shadow:0 20px 50px rgba(0,0,0,.4);filter:none}
+  .hero::before{top:0;bottom:auto;transform:none;right:-32%;width:165vw;opacity:.75}
+  .hero::after{background:linear-gradient(180deg,rgba(10,17,40,.35) 0%,rgba(10,17,40,0) 12%,rgba(10,17,40,.1) 30%,rgba(10,17,40,.9) 46%,#0A1128 58%)}
 }
