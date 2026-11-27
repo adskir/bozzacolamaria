@@ -505,3 +505,9 @@ nav .btn{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 16px rgba(255,255,255,.22
   .hero::before{top:0;bottom:auto;transform:none;right:-32%;width:165vw;opacity:.75}
   .hero::after{background:linear-gradient(180deg,rgba(10,17,40,.35) 0%,rgba(10,17,40,0) 12%,rgba(10,17,40,.1) 30%,rgba(10,17,40,.9) 46%,#0A1128 58%)}
 }
+/* intestazione: nome e qualifica più grandi e leggibili */
+.brand strong{font-size:22px;font-weight:800;color:#fff;letter-spacing:-.005em}
+.brand span{display:block;margin-top:2px;font-size:14.5px;font-weight:700;color:var(--teal);letter-spacing:.02em}
+@media(max-width:900px){.brand strong{font-size:19px}.brand span{font-size:13.5px}}
+.hero-badge i{background:var(--teal)}
+.hero-badge i svg{fill:#0A1128}
